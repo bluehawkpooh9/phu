@@ -11,6 +11,7 @@ import {AtComponent} from './at/at.component';
 import {HeroFormComponent} from './hero-form/hero-form.component';
 import {HeroListComponent} from './hero-list/hero-list.component';
 import {PagingComponent} from './paging/paging.component';
+import {UserinfoComponent} from './userinfo/userinfo.component';
 const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent},
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     { path: 'HeroFormComponent', component: HeroFormComponent},
     { path: 'HeroListComponent', component: HeroListComponent},
     { path: 'PagingComponent', component: PagingComponent},
+    { path: 'UserinfoComponent', component: UserinfoComponent},
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];

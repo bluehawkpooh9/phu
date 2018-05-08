@@ -27,7 +27,7 @@ export class EventsComponent implements OnInit {
     update(value1: string) { 
       this.value1 = value1; 
     }
-    lists = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+    lists = ['FrontEnd', 'Backend', 'DBA'];
     addList(newList: string) {
       if (newList) {
         this.lists.push(newList);

@@ -28,6 +28,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
     "ng-auto-complete": "^2.7.14",
     "ngx-bootstrap": "^2.0.4",
     "ngx-input-file": "^1.0.2",

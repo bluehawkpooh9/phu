@@ -104,7 +104,7 @@ export class AutoComponent {
 
   public groupStress1 = [
       CreateNewAutocompleteGroup(
-          'Search / choose in / from list',
+          'Search ',
           'items1',
           this.FillArray(),
           {titleKey: 'title', childrenKey: null},
@@ -137,7 +137,7 @@ export class AutoComponent {
   FillArray() {
       let arr = [];
       for (let i = 0; i < 150; i++) {
-          arr.push({title: `Option ${i} Lorem ipsum dolor sit amet, consectetur adipiscing elit.`, id: i});
+          arr.push({title: `List ${i} `, id: i});
       }
 
       return arr;
