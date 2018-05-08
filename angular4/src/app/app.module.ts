@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppBoostrapModule } from './app-boostrap/app-boostrap.module';
+
 //i18n
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -43,12 +44,18 @@ import { OnewayComponent } from './oneway/oneway.component';
 import {PagingComponent} from './paging/paging.component';
 import { DataTableModule } from 'angular-4-data-table/src/index';
 import { DataTableDemo1Remote } from './paging/data-table-demo1-remote';
+ import { HttpComponent } from './http/http.component';
+import { UserinfoComponent } from './userinfo/userinfo.component';
+
+
+
 
 
 
 
 export const createTranslateLoader = (http: HttpClient) => {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+ 
 };
 
 
@@ -72,6 +79,10 @@ export const createTranslateLoader = (http: HttpClient) => {
     DirectiveComponent,
     OnewayComponent,
     PagingComponent,
+    HttpComponent,
+    UserinfoComponent,
+  
+   
   
 
   ],

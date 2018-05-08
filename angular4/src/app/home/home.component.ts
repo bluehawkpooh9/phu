@@ -1,8 +1,8 @@
-import { Component, OnInit,TemplateRef } from '@angular/core'
-import { User } from '../_models/user'
-import { UserService } from '../_services/index'
+import { Component, OnInit,TemplateRef } from '@angular/core';
+import { User } from '../_models/user';
+import { UserService } from '../_services/index';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit {
   value1 = '';
   
   test = [
-    {'name':'test', 'nickname':'a','age':1},
-    {'name':'test1', 'nickname':'b','age':2},
-    {'name':'test2', 'nickname':'c','age':3}
+    {'name':'nuttakon', 'nickname':'phu','age':23},
+    {'name':'peerapong', 'nickname':'boss','age':22},
+    {'name':'saroch', 'nickname':'aon','age':24}
     ]
     
   
@@ -28,19 +28,20 @@ export class HomeComponent implements OnInit {
   users: User[] = []
   public modalRef: BsModalRef;
 
-  constructor(private userService: UserService,private modalService: BsModalService) {
+  constructor(private modalService: BsModalService,private http: HttpClient) {
     this.users = JSON.parse(localStorage.getItem('currentUser'));
     console.log(this.users)
     
   }
 
-  ngOnInit() {
+  ngOnInit(){
     this.sumNumber();
-    this.userService.getUsers()
-      .subscribe(users => {
-        this.users = users;
-      console.log("============="+users)
-      })
+    // this.userService.getUsers()
+    //   .subscribe(users => {
+    //     this.users = users;
+    //   console.log("============="+users)
+    //   })
+     
      
   }
  

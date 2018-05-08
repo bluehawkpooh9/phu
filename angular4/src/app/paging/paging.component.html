@@ -1,32 +1,8 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand"><a [routerLink]="['/home']">Standard</a></a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li ><a [routerLink]="['/home']">home</a></li>
-        <li><a [routerLink]="['/i18n']">i18n</a></li>
-        <li><a [routerLink]="['/AutoComponent']">auto</a></li>
-       
-        <li><a [routerLink]="['/InputFileComponent']">InputFile</a></li>
-        <li><a [routerLink]="['/AtComponent']">Autocompplete</a></li>
-        <li dropdown>
-          <a dropdownToggle class="dropdown-toggle" role="button">Form <span class="caret"></span></a>
-          <ul *dropdownMenu class="dropdown-menu">
-              <li><a [routerLink]="['/HeroFormComponent']">Template-driven Forms</a></li>
-              <li><a [routerLink]="['/HeroListComponent']">Form Validation</a></li>
-            
-               <li><a [routerLink]="['/EventsComponent']">event</a></li>
-          </ul>
-      </li>  
-        <li><a [routerLink]="['/PagingComponent']">paging</a></li>
-        <li><a [routerLink]="['/login']">Logout</a></li>
-      </ul>
-    </div>
-  
-  </nav>
-<div style="margin: auto; max-width: 1000px; margin-bottom: 50px;">
-    <data-table id="persons-grid"
+<app-i18n></app-i18n>
+
+<body class = "colorhome"> 
+<div style="margin: auto; max-width: 1000px; margin-bottom: 50px;" class="colorhome">
+    <br/><data-table id="persons-grid"
         headerTitle="Employees"
                 [pagination_limit]="true"
         [items]="items"
@@ -78,3 +54,4 @@
         </data-table-column>
     </data-table>
 </div>
+</body>
