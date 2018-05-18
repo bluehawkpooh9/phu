@@ -46,6 +46,8 @@ import { DataTableModule } from 'angular-4-data-table/src/index';
 import { DataTableDemo1Remote } from './paging/data-table-demo1-remote';
  import { HttpComponent } from './http/http.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
+import { MydatepickerComponent } from './mydatepicker/mydatepicker.component';
+// import { MyDatePickerModule } from 'mydatepicker';
 
 
 
@@ -81,6 +83,8 @@ export const createTranslateLoader = (http: HttpClient) => {
     PagingComponent,
     HttpComponent,
     UserinfoComponent,
+    MydatepickerComponent,
+
   
    
   
@@ -96,6 +100,7 @@ export const createTranslateLoader = (http: HttpClient) => {
     HttpClientModule, 
     NgAutoCompleteModule,
     DataTableModule,
+    // MyDatePickerModule ,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 1234",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -30,6 +30,8 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "ng-auto-complete": "^2.7.14",
+    "ng2-datepicker": "^3.0.0",
+    "ng4-datepicker": "^1.0.12",
     "ngx-bootstrap": "^2.0.4",
     "ngx-input-file": "^1.0.2",
     "rxjs": "^5.1.0",
